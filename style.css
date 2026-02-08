@@ -1,0 +1,236 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8fafc;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Шапка */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* Карточка товара */
+.product-card {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #e2e8f0;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product-header h2 {
+    font-size: 1.8rem;
+    color: #1e293b;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #10b981;
+    line-height: 1;
+}
+
+.product-description {
+    font-size: 1.1rem;
+    color: #475569;
+    margin-bottom: 25px;
+}
+
+.product-description ul {
+    list-style-type: none;
+    margin-top: 15px;
+    padding-left: 0;
+}
+
+.product-description li {
+    padding: 8px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.product-description li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* Кнопка */
+.buy-button {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(90deg, #3b82f6, #6366f1);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.25);
+    margin-bottom: 10px;
+}
+
+.buy-button:hover {
+    background: linear-gradient(90deg, #2563eb, #4f46e5);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(59, 130, 246, 0.3);
+}
+
+.hint {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* Информационные блоки */
+.info-section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #e2e8f0;
+}
+
+.info-section h3 {
+    font-size: 1.4rem;
+    color: #1e293b;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-section p {
+    color: #475569;
+    margin-bottom: 10px;
+}
+
+.contacts p {
+    margin-bottom: 8px;
+}
+
+/* Ссылки */
+a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* Текст оферты */
+.legal-text {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.legal-text h2 {
+    font-size: 1.4rem;
+    color: #1e293b;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.legal-text p {
+    margin-bottom: 15px;
+}
+
+.signature {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #e2e8f0;
+    font-weight: 600;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .product-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .price {
+        font-size: 2.5rem;
+    }
+    
+    .buy-button {
+        padding: 16px;
+        font-size: 1.1rem;
+    }
+}
